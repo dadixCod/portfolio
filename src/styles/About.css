@@ -109,3 +109,24 @@ svg {
   
   text-align: center;
 }
+
+@media(max-width: 890px) {
+  .image-text{
+    flex-direction: column;
+  }
+  .image-about{
+    width: 90%;
+    height: 360px;
+    margin-right: 0;
+    display: block;
+  }
+  .right-about h2 {
+    text-align: center;
+  }
+  .stats{
+    justify-content: center;
+  }
+  .hire{
+    justify-content: center;
+  }
+}

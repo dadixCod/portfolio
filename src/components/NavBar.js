@@ -8,22 +8,16 @@ const NavBar = () => {
     setDropDownState(!dropDownState);
   }
   return (
-    <header>
-      <motion.div
-        variants={fadeIn("right", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-        className="logo"
-      >
+    <motion.header
+      variants={fadeIn("down", 0.3)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.3 }}
+    >
+      <div className="logo">
         <img src="https://www.dadixcod.com/logo.png" alt="Mehdi Elouissi" />
-      </motion.div>
-      <motion.nav
-        variants={fadeIn("left", 0.3)}
-        initial="hidden"
-        whileInView={"show"}
-        viewport={{ once: false, amount: 0.3 }}
-      >
+      </div>
+      <nav>
         <ul>
           <li>
             <a href="#about">About</a>
@@ -45,7 +39,7 @@ const NavBar = () => {
             }`}
           ></i>
         </div>
-      </motion.nav>
+      </nav>
 
       <div className={`dropdown_menu ${dropDownState ? "open" : ""}`}>
         <li>
@@ -61,7 +55,7 @@ const NavBar = () => {
           <a href="#contact">Contact</a>
         </li>
       </div>
-    </header>
+    </motion.header>
   );
 };
 
