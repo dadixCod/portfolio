@@ -24,6 +24,18 @@
   filter: blur(100px);
   z-index: 0;
 }
+.second-circle {
+  position: absolute;
+  width: 20vw;
+  height: 20vw;
+  min-width: 350px;
+  top: 700px;
+  right:-10vw;
+  border-radius: 50%;
+  background: rgba(46, 150, 202, 0.619);
+  filter: blur(100px);
+  z-index: 0;
+}
 
 .home-content {
   display: flex;

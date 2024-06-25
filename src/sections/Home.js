@@ -1,7 +1,8 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import "../styles/Home.css";
-
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Home = () => {
   function openLink(url) {
@@ -10,8 +11,15 @@ const Home = () => {
   return (
     <section id="home" className="home">
       <div className="big-circle"></div>
+      <div className="second-circle"></div>
       <div className="home-content">
-        <div className="text-content">
+        <motion.div
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-content"
+        >
           <h1>I'm Mehdi Elouissi</h1>
           <p>
             Experienced Mobile App developer using Flutter & Dart, Kotlin and
@@ -22,7 +30,11 @@ const Home = () => {
               className="iconrec"
               onClick={() => openLink("https://github.com/dadixcod")}
             >
-              <a href="https://dadixcod.com" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://dadixcod.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub />
               </a>
             </div>
@@ -35,7 +47,7 @@ const Home = () => {
               }
             >
               <a href="https://dadixcod.com" rel="noopener noreferrer">
-                <FaLinkedin /> 
+                <FaLinkedin />
               </a>
             </div>
             <div
@@ -62,12 +74,21 @@ const Home = () => {
           >
             View & Download CV
           </button>
-        </div>
-        <div className="image-content">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="image-content"
+        >
           <div className="image-wrapper">
-            <img src="https://www.dadixcod.com/profile-pic.jpg" alt="Mehdi Elouissi" />
+            <img
+              src="https://www.dadixcod.com/profile-pic.jpg"
+              alt="Mehdi Elouissi"
+            />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

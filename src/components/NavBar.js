@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-// import logo from "https://www.dadixcod.com/logo.png";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const NavBar = () => {
   const [dropDownState, setDropDownState] = useState(false);
@@ -8,10 +9,21 @@ const NavBar = () => {
   }
   return (
     <header>
-      <div className="logo">
+      <motion.div
+        variants={fadeIn("right", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className="logo"
+      >
         <img src="https://www.dadixcod.com/logo.png" alt="Mehdi Elouissi" />
-      </div>
-      <nav>
+      </motion.div>
+      <motion.nav
+        variants={fadeIn("left", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+      >
         <ul>
           <li>
             <a href="#about">About</a>
@@ -33,7 +45,7 @@ const NavBar = () => {
             }`}
           ></i>
         </div>
-      </nav>
+      </motion.nav>
 
       <div className={`dropdown_menu ${dropDownState ? "open" : ""}`}>
         <li>

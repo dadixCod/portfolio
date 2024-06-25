@@ -1,53 +1,111 @@
 .about-section {
-    padding: 100px 0;
+    padding: 100px 10vw;
      
   }
-/*   
-  .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .about-content h2 {
-    font-size: 4rem;
-    color: white; /* Example text color 
-  }
-  
-  .about-description {
-    margin: 30px 0;
-    font-size: 1.2em;
-    color: #333; 
-  }
-  
-  .skills {
+  .image-about{
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 120vw;
+    mix-blend-mode: lighten;
+    border-image: linear-gradient(to bottom, rgb(86, 192, 230), rgba(0,0,0,0)) 1 ;
+    border-image-slice: 1%;
+    margin-right: 2rem;
   }
-  
-  .skill {
-    text-align: center;
-    width: 30%;
-    padding: 20px;
-    background-color: rgba(15, 194, 192, 0.1); 
-    border-radius: 20px;
-    transition: background-color 0.3s ease;
+  .image-about .img{
+    width: 440px;
+    height: 440px;
   }
-  
-  .skill:hover {
-    background-color: #0fc2c0; 
+
+  .years-countup{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 2px;
   }
-  
-  .skill h3 {
-    font-size: 1.5em;
-    color: #012030; 
+  .years-text{
+    
+    font-weight: 600;
+    
   }
-  
-  .skill p {
-    font-size: 1em;
-    color: #555; 
+
+  .stats{
+
+    display: flex;
+    gap: 30px;
+    margin-bottom: 0px;
   }
+  .hire{
+    display:  flex;
+    justify-content: start;
+  }
+  .hire button{
+    margin-top: 20px;
+    font-weight: 700;
+  }
+  .right-about{
+    display: flexbox;
+  }
+.right-about h3{
+  margin-bottom: 20px;
+}
+.right-about p {
+  margin-bottom: 30px;
+}
+.image-text{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.circle-container {
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(-90deg); 
+  margin-bottom: 10px; 
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.circle-background,
+.circle-progress {
+  fill: none;
+  stroke-width: 6;
+  r: 36;
+  cx: 40;
+  cy: 40;
+}
+
+.circle-background {
+  stroke: rgba(255, 255, 255, 0.3); 
+}
+
+.circle-progress {
+  stroke: #0FC2C0; 
+  stroke-linecap: round;
+  transition: stroke-dashoffset 5s ease;
+}
+
+.years-countup {
+  position: absolute;
+  font-size: 22px;
+  font-weight: 700;
+  z-index: 1; 
+  margin-bottom: 50px;
+}
+
+.years-text {
   
-  */
-  
+  text-align: center;
+}
