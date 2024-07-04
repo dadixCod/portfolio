@@ -1,9 +1,8 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaBehance } from "react-icons/fa";
 import "../styles/Home.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-
 
 const Home = () => {
   function openLink(url) {
@@ -13,7 +12,7 @@ const Home = () => {
     <section id="home" className="home">
       <div className="big-circle"></div>
       <div className="second-circle"></div>
-     
+
       <div className="home-content">
         <motion.div
           variants={fadeIn("right", 0.3)}
@@ -54,7 +53,7 @@ const Home = () => {
             </div>
             <div
               className="iconrec"
-              onClick={() => openLink("https://x.com/MehdiElouissi2")}
+              onClick={() => openLink("https://x.com/mehdielouissiD")}
             >
               <a href="https://dadixcod.com" rel="noopener noreferrer">
                 <FaTwitter />
@@ -62,16 +61,19 @@ const Home = () => {
             </div>
             <div
               className="iconrec"
-              onClick={() => openLink("https://www.instagram.com/mehdi_elss")}
+              onClick={() => openLink("https://www.behance.net/mehdielouissi1")}
             >
               <a href="https://dadixcod.com" rel="noopener noreferrer">
-                <FaInstagram />
+                <FaBehance />
               </a>
             </div>
           </div>
           <button
             onClick={() =>
-              window.open("https://www.dadixcod.com/assets/mehdi-cv.pdf", "_blank")
+              window.open(
+                "https://www.dadixcod.com/assets/mehdi-cv.pdf",
+                "_blank"
+              )
             }
           >
             View & Download CV

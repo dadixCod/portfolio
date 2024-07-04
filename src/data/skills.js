@@ -72,6 +72,10 @@ export const skills = [
         name: "Figma",
         image: "https://dadixcod.com/assets/figma.png",
       },
+      {
+        name: "Adobe XD",
+        image: "https://dadixcod.com/assets/adobexd.png",
+      },
     ],
   },
   {
