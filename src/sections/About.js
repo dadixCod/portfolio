@@ -1,121 +1,105 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../styles/About.css";
-import Countup from "react-countup";
-import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const About = () => {
-  const [ref, inView] = useInView({
-    threshold: 0.5,
-  });
-  const [mobileAppPercent, setMobileAppPercent] = useState(0);
-  const [backendPercent, setBackendPercent] = useState(0);
-  const [uxUiPercent, setUxUiPercent] = useState(0);
-
-  useEffect(() => {
-    if (inView) {
-      setMobileAppPercent(80);
-      setBackendPercent(60);
-      setUxUiPercent(80);
-    }
-  }, [inView]);
-
-  const circleLength = 2 * Math.PI * 36; 
-
   return (
-    <section className="about-section" id="about" ref={ref}>
-      <div className="container mx-auto">
-        <div className="image-text">
-          <motion.div
-            variants={fadeIn('right', 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className="image-about">
-            <img className="img" src="https://dadixcod.com/assets/developer.jpg" alt="Mehdi Elouissi" />
-          </motion.div>
-          <motion.div
-           variants={fadeIn('left', 0.3)}
-           initial="hidden"
-           whileInView={"show"}
-           viewport={{ once: false, amount: 0.3 }}
-          
-          className="right-about">
-            <h2>About</h2>
-            <h3>
-              I'm a Freelance FullStack Mobile App Developer with 2 years of
-              Experience.
-            </h3>
-            <p>
-              I worked for 2 years in design, where I built some beautiful UX/UI designs, social media posts, and more. I started my journey as a Full Stack Mobile Application Developer 2 years ago, using Flutter & Dart, Kotlin, and NodeJS for the backend. My career is still long, and I will definitely bring more products to life in my journey. Here are some stats:
-            </p>
+    <section className="about-section" id="about">
+      
+      <motion.div
+        variants={fadeIn("down", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.3 }}
+        className="about-text"
+      >
+        <h1>About me.</h1>
+      </motion.div>
 
-            {/* Stats */}
-            <div className="stats">
-              <div className="circle-container">
-                <svg className="circle">
-                  <circle className="circle-background" />
-                  <circle
-                    className="circle-progress"
-                    strokeDasharray={circleLength}
-                    strokeDashoffset={circleLength - (inView ? (mobileAppPercent / 100) * circleLength : 0)}
-                  />
-                </svg>
-                <div className="years-countup">
-                  {inView ? (
-                    <Countup start={0} end={80} duration={3} />
-                  ) : null}%
-                </div>
-                <div className="years-text">
-                  Mobile App <br />
-                  Development
-                </div>
-              </div>
-              <div className="circle-container">
-                <svg className="circle">
-                  <circle className="circle-background" />
-                  <circle
-                    className="circle-progress"
-                    strokeDasharray={circleLength}
-                    strokeDashoffset={circleLength - (inView ? (backendPercent / 100) * circleLength : 0)}
-                  />
-                </svg>
-                <div className="years-countup">
-                  {inView ? (
-                    <Countup start={0} end={60} duration={3} />
-                  ) : null}%
-                </div>
-                <div className="years-text">
-                  Backend <br />
-                  Development
-                </div>
-              </div>
-              <div className="circle-container">
-                <svg className="circle">
-                  <circle className="circle-background" />
-                  <circle
-                    className="circle-progress"
-                    strokeDasharray={circleLength}
-                    strokeDashoffset={circleLength - (inView ? (uxUiPercent / 100) * circleLength : 0)}
-                  />
-                </svg>
-                <div className="years-countup">
-                  {inView ? (
-                    <Countup start={0} end={80} duration={3} />
-                  ) : null}%
-                </div>
-                <div className="years-text">
-                  UX/UI <br />
-                  Design
-                </div>
-              </div>
+      <div className="about-container">
+        <motion.div
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="left-about"
+        >
+          <div className="rectangle-about">
+            <div>
+              <img
+                className="icon"
+                src="https://dadixcod.com/assets/flutter.png"
+                alt=""
+              />
             </div>
-            <div className="hire">
-              <button className="btn btn-lg">Hire me</button>
+            <div className="text">
+              <h3>Cross Platform Development</h3>
+              <p>
+                I have build different apps for different clients with
+                Flutter/Dart , with my 2 years of experience , I can bring any
+                UI to Life
+              </p>
             </div>
-          </motion.div>
-        </div>
+          </div>
+          <div className="rectangle-about">
+            <div>
+              <img
+                className="icon"
+                src="https://dadixcod.com/assets/android.png"
+                alt=""
+              />
+            </div>
+            <div className="text">
+              <h3>Android Development</h3>
+              <p>
+                I have a good knowledge using Kotlin / Java to develop Native
+                Android apps with 1 year of experience
+              </p>
+            </div>
+          </div>
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="right-about"
+        >
+          <div className="rectangle-about">
+            <div>
+              <img
+                className="icon"
+                src="https://dadixcod.com/assets/backend.png"
+                alt=""
+              />
+            </div>
+            <div className="text">
+              <h3>Backend Development</h3>
+              <p>
+                I have also 1 year experience in Backend using NodeJs and
+                ExpressJS to build a maintainable backend programs
+              </p>
+            </div>
+          </div>
+          <div className="rectangle-about">
+            <div>
+              <img
+                className="icon"
+                src="https://dadixcod.com/assets/design.png"
+                alt=""
+              />
+            </div>
+            <div className="text">
+              <h3>Design</h3>
+              <p>
+                I worked for 2 years in design with different fields such as
+                UX/UI design ,Social Media posts deisgn , identity design and
+                more.
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

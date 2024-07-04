@@ -4,6 +4,7 @@ import "../styles/Home.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
+
 const Home = () => {
   function openLink(url) {
     window.open(url, "_blank");
@@ -12,6 +13,7 @@ const Home = () => {
     <section id="home" className="home">
       <div className="big-circle"></div>
       <div className="second-circle"></div>
+     
       <div className="home-content">
         <motion.div
           variants={fadeIn("right", 0.3)}
@@ -69,7 +71,7 @@ const Home = () => {
           </div>
           <button
             onClick={() =>
-              window.open("https://www.dadixcod.com/mehdi-cv.pdf", "_blank")
+              window.open("https://www.dadixcod.com/assets/mehdi-cv.pdf", "_blank")
             }
           >
             View & Download CV
@@ -84,7 +86,7 @@ const Home = () => {
         >
           <div className="image-wrapper">
             <img
-              src="https://www.dadixcod.com/profile-pic.jpg"
+              src="https://www.dadixcod.com/assets/profile-pic.jpg"
               alt="Mehdi Elouissi"
             />
           </div>

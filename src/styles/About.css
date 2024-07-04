@@ -1,132 +1,54 @@
 .about-section {
     padding: 100px 10vw;
-     
-  }
-  .image-about{
-    display: flex;
-    border: 1px solid white;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 120vw;
-    mix-blend-mode: lighten;
-    border-image: linear-gradient(to bottom, rgb(86, 192, 230), rgba(0,0,0,0)) 1 ;
-    border-image-slice: 1%;
-    margin-right: 2rem;
-  }
-  .image-about .img{
-    width: 440px;
-    height: 440px;
-  }
-
-  .years-countup{
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 2px;
-  }
-  .years-text{
-    
-    font-weight: 600;
-    
-  }
-
-  .stats{
-
-    display: flex;
-    gap: 30px;
-    margin-bottom: 0px;
-  }
-  .hire{
-    display:  flex;
-    justify-content: start;
-  }
-  .hire button{
-    margin-top: 20px;
-    font-weight: 700;
-  }
-  .right-about{
-    display: flexbox;
-  }
-.right-about h3{
-  margin-bottom: 20px;
+   
 }
-.right-about p {
-  margin-bottom: 30px;
-}
-.image-text{
+
+.about-container{
   display: flex;
-  gap: 20px;
   align-items: center;
+  flex-direction: row;
+  gap: 5%;
 }
-.circle-container {
-  position: relative;
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-}
-
-.circle {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  transform: rotate(-90deg); 
-  margin-bottom: 10px; 
-}
-
-svg {
-  width: 100%;
-  height: 100%;
-}
-
-.circle-background,
-.circle-progress {
-  fill: none;
-  stroke-width: 6;
-  r: 36;
-  cx: 40;
-  cy: 40;
-}
-
-.circle-background {
-  stroke: rgba(255, 255, 255, 0.3); 
-}
-
-.circle-progress {
-  stroke: #0FC2C0; 
-  stroke-linecap: round;
-  transition: stroke-dashoffset 5s ease;
-}
-
-.years-countup {
-  position: absolute;
-  font-size: 22px;
-  font-weight: 700;
-  z-index: 1; 
+.about-text{
+  text-align: center;
+  font-size: 24px;
   margin-bottom: 50px;
 }
 
-.years-text {
+.rectangle-about {
+  /* z-index: 10000; */
+  width: 100%;
+  /* height: 6rem; */
+  background-color: rgb(23, 53, 87);
+  border-radius: 15px;
+  border: 1px solid rgb(54, 101, 154);
+  padding: 0px  10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 33px 11 rgba(100, 199, 255, 1) !important; 
   
-  text-align: center;
+  
+}
+.icon {
+  /* position: absolute; */
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) invert(1);
+  
 }
 
+.rectangle-about:hover{
+  scale: 1.02;
+  transition-duration: 300ms;
+  animation: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
 @media(max-width: 890px) {
-  .image-text{
+  .about-container{
     flex-direction: column;
   }
-  .image-about{
-    width: 90%;
-    height: 360px;
-    margin-right: 0;
-    display: block;
-  }
-  .right-about h2 {
-    text-align: center;
-  }
-  .stats{
-    justify-content: center;
-  }
-  .hire{
-    justify-content: center;
-  }
+  
 }
