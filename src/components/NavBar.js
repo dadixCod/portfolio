@@ -9,10 +9,10 @@ const NavBar = () => {
   }
   return (
     <motion.header
-      variants={fadeIn("down", 0.3)}
+      variants={fadeIn("down", 0.1)}
       initial="hidden"
       whileInView={"show"}
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: false, amount: 0.1 }}
     >
       <div className="logo">
         <img
@@ -46,16 +46,24 @@ const NavBar = () => {
 
       <div className={`dropdown_menu ${dropDownState ? "open" : ""}`}>
         <li>
-          <a href="#about">About</a>
+          <a onClick={() => setDropDownState(false)} href="#about">
+            About
+          </a>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <a onClick={() => setDropDownState(false)} href="#skills">
+            Skills
+          </a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a onClick={() => setDropDownState(false)} href="#projects">
+            Projects
+          </a>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <a onClick={() => setDropDownState(false)} href="#contact">
+            Contact
+          </a>
         </li>
       </div>
     </motion.header>

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Skills.css";
-import { skills } from "../data/skills";
+import { skills } from "../data/Constants";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
@@ -13,7 +13,7 @@ const Skills = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="title"
+          className="skills-title"
         >
           Skills
         </motion.div>
@@ -22,7 +22,7 @@ const Skills = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="desc"
+          className="skills-desc"
         >
           <p>
             Here are some of my skills on which I have been working on the past
@@ -32,16 +32,17 @@ const Skills = () => {
         <div className="skills-container">
           {skills.map((item) => (
             <motion.div
-              variants={fadeIn("left", 0.3)}
+              variants={fadeIn("down", 0.3)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
+              key={item.title}
               className="skill"
             >
               <div className="skill-title">{item.title}</div>
               <div className="skills-list">
                 {item.skills.map((skill) => (
-                  <div className="skill-item">
+                  <div key={skill.name} className="skill-item">
                     <img src={skill.image} alt="Skill" /> {skill.name}
                   </div>
                 ))}
