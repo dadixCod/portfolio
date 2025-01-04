@@ -144,7 +144,7 @@ export const projects = [
     description:
       "Mobile app that can help you track all your expenses and incomes monthly,weekly,daily & more .",
     category: "mobile",
-    image: "https://dadixcod.com/assets/mymib.png",
+    image: "https://dadixcod.com/assets/MyMib_Thumbnail.png",
     repository: "https://github.com/dadixCod/mymib",
     tags: [
       {
