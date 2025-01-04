@@ -108,6 +108,38 @@ export const skills = [
 export const projects = [
   {
     id: 0,
+    title: "Quantify",
+    description:
+      "Track client incomes, debts, and transactions with ease. Gain insights through efficient analytics for better financial management..",
+    category: "mobile",
+    image: "https://dadixcod.com/assets/Quantify-Thumbnail.png",
+    repository: "https://github.com/dadixCod/quantify",
+    tags: [
+      {
+        tag: "Flutter",
+      },
+      {
+        tag: "Dart",
+      },
+      {
+        tag: "Bloc",
+      },
+
+      {
+        tag: "Lottie",
+      },
+
+      {
+        tag: "SQLite",
+      },
+      {
+        tag: "FLCharts",
+      },
+    ],
+    videoUrl: "https://dadixcod.com/assets/Quantify.mp4",
+  },
+  {
+    id: 1,
     title: "My Mib",
     description:
       "Mobile app that can help you track all your expenses and incomes monthly,weekly,daily & more .",
@@ -137,7 +169,7 @@ export const projects = [
     videoUrl: "https://dadixcod.com/assets/mymibvideo.mp4",
   },
   {
-    id: 1,
+    id: 2,
     title: "Local Pharm",
     description:
       "Mobile app that can help you track your home's medicaments and notify you abour their expiry date.",

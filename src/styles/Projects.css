@@ -146,7 +146,7 @@
     color: rgba(255, 255, 255, 0.5);
     padding-left: 16px;
     max-width: 80%;
-    text-align: center;
+    text-align: start;
 }
 .links-row{
     display: flex;
