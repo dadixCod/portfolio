@@ -136,7 +136,7 @@ export const projects = [
         tag: "FLCharts",
       },
     ],
-    videoUrl: "https://dadixcod.com/assets/Quantify.mp4",
+    videoUrl: "https://dadixcod.com/assets/Quantify_Intro.mp4",
   },
   {
     id: 1,
