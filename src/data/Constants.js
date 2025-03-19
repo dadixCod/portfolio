@@ -170,12 +170,12 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Local Pharm",
+    title: "Movies App",
     description:
-      "Mobile app that can help you track your home's medicaments and notify you abour their expiry date.",
+      "A beautifully designed movie streaming app with real-time data from the IMDB API. (Personal project – Not for public release).",
     category: "mobile",
-    image: "https://dadixcod.com/assets/localpharm.png",
-    repository: "https://github.com/dadixCod/localPharm",
+    image: "https://dadixcod.com/assets/Movies App Thumbnail.png",
+    repository: "https://github.com/dadixCod/ronassapp",
     tags: [
       {
         tag: "Flutter",
@@ -187,10 +187,10 @@ export const projects = [
         tag: "Bloc",
       },
       {
-        tag: "SQLite",
+        tag: "RestAPI",
       },
     ],
-    videoUrl: "https://dadixcod.com/assets/localpharmvideo.mp4",
+    videoUrl: "https://dadixcod.com/assets/Movies_App_video.mp4",
   },
   {
     id: 3,
