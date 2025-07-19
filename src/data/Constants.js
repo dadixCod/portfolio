@@ -4,31 +4,28 @@ export const skills = [
     skills: [
       {
         name: "Flutter",
-        image: "https://dadixcod.com/assets/flutter_colored.png",
+        image: "/assets/flutter.png",
       },
       {
         name: "Dart",
-        image: "https://dadixcod.com/assets/dart.png",
+        image: "/assets/dart.png",
       },
       {
         name: "Bloc",
-        image: "https://dadixcod.com/assets/bloc.png",
+        image: "/assets/bloc.png",
       },
       {
         name: "Kotlin",
-        image: "https://dadixcod.com/assets/kotlin.png",
+        image: "/assets/kotlin.png",
       },
       {
         name: "Java",
-        image: "https://dadixcod.com/assets/java.png",
+        image: "/assets/java.png",
       },
-      {
-        name: "Compose",
-        image: "https://dadixcod.com/assets/compose.png",
-      },
+
       {
         name: "XML",
-        image: "https://dadixcod.com/assets/xml.png",
+        image: "/assets/xml.png",
       },
     ],
   },
@@ -37,23 +34,27 @@ export const skills = [
     skills: [
       {
         name: "NodeJS",
-        image: "https://dadixcod.com/assets/node-js.png",
+        image: "/assets/nodejs.png",
       },
       {
         name: "ExpressJS",
-        image: "https://dadixcod.com/assets/express-js.png",
+        image: "/assets/express.png",
+      },
+      {
+        name: "NestJS",
+        image: "/assets/nestjs.png",
       },
       {
         name: "MongoDB",
-        image: "https://dadixcod.com/assets/mongo-db.png",
+        image: "/assets/mongo-db.png",
       },
       {
         name: "PostgreSQL",
-        image: "https://dadixcod.com/assets/postgresql.png",
+        image: "/assets/postgres.png",
       },
       {
         name: "Firebase",
-        image: "https://dadixcod.com/assets/firebase.png",
+        image: "/assets/firebase.png",
       },
     ],
   },
@@ -62,19 +63,19 @@ export const skills = [
     skills: [
       {
         name: "Photoshop",
-        image: "https://dadixcod.com/assets/photoshop.png",
+        image: "/assets/photoshop.png",
       },
       {
         name: "Illustrator",
-        image: "https://dadixcod.com/assets/illustrator.png",
+        image: "/assets/adobe-illustrator.png",
       },
       {
         name: "Figma",
-        image: "https://dadixcod.com/assets/figma.png",
+        image: "/assets/figma.png",
       },
       {
         name: "Adobe XD",
-        image: "https://dadixcod.com/assets/adobexd.png",
+        image: "/assets/adobe-xd.png",
       },
     ],
   },
@@ -83,23 +84,23 @@ export const skills = [
     skills: [
       {
         name: "Git",
-        image: "https://dadixcod.com/assets/git.png",
+        image: "/assets/git.png",
       },
       {
         name: "GitHub",
-        image: "https://dadixcod.com/assets/github.png",
+        image: "/assets/github.png",
       },
       {
         name: "VS Code",
-        image: "https://dadixcod.com/assets/vs-code.png",
+        image: "/assets/vs-code.png",
       },
       {
         name: "Postman",
-        image: "https://dadixcod.com/assets/postman.png",
+        image: "/assets/postman.png",
       },
       {
         name: "Android Studio",
-        image: "https://dadixcod.com/assets/android-studio.png",
+        image: "/assets/android-studio.png",
       },
     ],
   },
@@ -112,7 +113,7 @@ export const projects = [
     description:
       "Track client incomes, debts, and transactions with ease. Gain insights through efficient analytics for better financial management..",
     category: "mobile",
-    image: "https://dadixcod.com/assets/Quantify-Thumbnail.png",
+    image: "/assets/Quantify Thumbnail.png",
     repository: "https://github.com/dadixCod/quantify",
     tags: [
       {
@@ -136,7 +137,7 @@ export const projects = [
         tag: "FLCharts",
       },
     ],
-    videoUrl: "https://dadixcod.com/assets/Quantify_Intro.mp4",
+    videoUrl: "/videos/Quantify Intro.mp4",
   },
   {
     id: 1,
@@ -144,7 +145,7 @@ export const projects = [
     description:
       "Mobile app that can help you track all your expenses and incomes monthly,weekly,daily & more .",
     category: "mobile",
-    image: "https://dadixcod.com/assets/MyMib_Thumbnail.png",
+    image: "/assets/MyMIB Thumbnail.png",
     repository: "https://github.com/dadixCod/mymib",
     tags: [
       {
@@ -166,7 +167,7 @@ export const projects = [
         tag: "FLCharts",
       },
     ],
-    videoUrl: "https://dadixcod.com/assets/mymibvideo.mp4",
+    videoUrl: "/videos/MyMIB.mp4",
   },
   {
     id: 2,
@@ -174,7 +175,7 @@ export const projects = [
     description:
       "A beautifully designed movie streaming app with real-time data from the IMDB API. (Personal project – Not for public release).",
     category: "mobile",
-    image: "https://dadixcod.com/assets/Movies App Thumbnail.png",
+    image: "/assets/Movies App Thumbnail.png",
     repository: "https://github.com/dadixCod/ronassapp",
     tags: [
       {
@@ -190,7 +191,7 @@ export const projects = [
         tag: "RestAPI",
       },
     ],
-    videoUrl: "https://dadixcod.com/assets/Movies_App_video.mp4",
+    videoUrl: "/videos/Final Ronas.mp4",
   },
   {
     id: 3,
@@ -198,7 +199,7 @@ export const projects = [
     description:
       "This Full Stack Web app was developed for the CNR company to let the admin track all the IT Equipements inside the company.",
     category: "web",
-    image: "https://dadixcod.com/assets/Itequipement.png",
+    image: "/assets/ItEquipement.png",
     repository: "https://github.com/dadixCod/fullstack-stage",
     tags: [
       {
@@ -217,6 +218,6 @@ export const projects = [
         tag: "JWT",
       },
     ],
-    videoUrl: "https://dadixcod.com/assets/itequipementvideo.mp4",
+    videoUrl: "/videos/itequipementvideo.mp4",
   },
 ];

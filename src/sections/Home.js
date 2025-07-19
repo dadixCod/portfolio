@@ -87,10 +87,7 @@ const Home = () => {
           className="image-content"
         >
           <div className="image-wrapper">
-            <img
-              src="https://www.dadixcod.com/assets/profile-pic.jpg"
-              alt="Mehdi Elouissi"
-            />
+            <img src="/assets/profile-pic.jpg" alt="Mehdi Elouissi" />
           </div>
         </motion.div>
       </div>

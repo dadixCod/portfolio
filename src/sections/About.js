@@ -6,7 +6,6 @@ import { fadeIn } from "../variants";
 const About = () => {
   return (
     <section className="about-section" id="about">
-      
       <motion.div
         variants={fadeIn("down", 0.3)}
         initial="hidden"
@@ -27,11 +26,7 @@ const About = () => {
         >
           <div className="rectangle-about">
             <div>
-              <img
-                className="icon"
-                src="https://dadixcod.com/assets/flutter.png"
-                alt=""
-              />
+              <img className="icon" src="/assets/flutter.png" alt="" />
             </div>
             <div className="text">
               <h3>Cross Platform Development</h3>
@@ -44,11 +39,7 @@ const About = () => {
           </div>
           <div className="rectangle-about">
             <div>
-              <img
-                className="icon"
-                src="https://dadixcod.com/assets/android.png"
-                alt=""
-              />
+              <img className="icon" src="/assets/android.png" alt="" />
             </div>
             <div className="text">
               <h3>Android Development</h3>
@@ -68,11 +59,7 @@ const About = () => {
         >
           <div className="rectangle-about">
             <div>
-              <img
-                className="icon"
-                src="https://dadixcod.com/assets/backend.png"
-                alt=""
-              />
+              <img className="icon" src="/assets/coding.png" alt="" />
             </div>
             <div className="text">
               <h3>Backend Development</h3>
@@ -84,11 +71,7 @@ const About = () => {
           </div>
           <div className="rectangle-about">
             <div>
-              <img
-                className="icon"
-                src="https://dadixcod.com/assets/design.png"
-                alt=""
-              />
+              <img className="icon" src="/assets/design.png" alt="" />
             </div>
             <div className="text">
               <h3>Design</h3>

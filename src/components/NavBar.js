@@ -15,10 +15,7 @@ const NavBar = () => {
       viewport={{ once: false, amount: 0.1 }}
     >
       <div className="logo">
-        <img
-          src="https://www.dadixcod.com/assets/logo.png"
-          alt="Mehdi Elouissi"
-        />
+        <img src="/assets/logo.png" alt="Mehdi Elouissi" />
       </div>
       <nav>
         <ul>
