@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className="App">
       <div className="background-image">
-        <img src="https://dadixcod.com/assets/stars.jpg" alt="Stars"></img>
+        <img src="/assets/stars.jpg" alt="Stars"></img>
       </div>
       <NavBar />
       <Home />
