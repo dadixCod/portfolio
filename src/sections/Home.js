@@ -71,7 +71,7 @@ const Home = () => {
           <button
             onClick={() =>
               window.open(
-                "https://www.dadixcod.com/assets/mehdi-cv.pdf",
+                "/cv/Elmehdi Elouissi Software Engineer.pdf",
                 "_blank"
               )
             }
