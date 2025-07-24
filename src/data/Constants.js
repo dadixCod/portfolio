@@ -141,6 +141,58 @@ export const projects = [
   },
   {
     id: 1,
+    title: "Researcher Agent App",
+    description:
+      "This app is designed to help to deep research on any topic by providing a full context of the topic with all the related information.",
+    category: "mobile",
+    image: "/assets/Researcher Thumbnail.png",
+    repository: "https://github.com/dadixCod/",
+    tags: [
+      {
+        tag: "Flutter",
+      },
+      {
+        tag: "Dart",
+      },
+      {
+        tag: "Python",
+      },
+      {
+        tag: "FastAPI",
+      },
+      {
+        tag: "Bloc",
+      },
+    ],
+    videoUrl: "/videos/Researcher Video.mp4",
+  },
+
+  {
+    id: 2,
+    title: "Movies App",
+    description:
+      "A beautifully designed movie streaming app with real-time data from the IMDB API. (Personal project – Not for public release).",
+    category: "mobile",
+    image: "/assets/Movies App Thumbnail.png",
+    repository: "https://github.com/dadixCod/ronassapp",
+    tags: [
+      {
+        tag: "Flutter",
+      },
+      {
+        tag: "Dart",
+      },
+      {
+        tag: "Bloc",
+      },
+      {
+        tag: "RestAPI",
+      },
+    ],
+    videoUrl: "/videos/Final Ronas.mp4",
+  },
+  {
+    id: 3,
     title: "My Mib",
     description:
       "Mobile app that can help you track all your expenses and incomes monthly,weekly,daily & more .",
@@ -169,32 +221,9 @@ export const projects = [
     ],
     videoUrl: "/videos/MyMIB.mp4",
   },
+
   {
-    id: 2,
-    title: "Movies App",
-    description:
-      "A beautifully designed movie streaming app with real-time data from the IMDB API. (Personal project – Not for public release).",
-    category: "mobile",
-    image: "/assets/Movies App Thumbnail.png",
-    repository: "https://github.com/dadixCod/ronassapp",
-    tags: [
-      {
-        tag: "Flutter",
-      },
-      {
-        tag: "Dart",
-      },
-      {
-        tag: "Bloc",
-      },
-      {
-        tag: "RestAPI",
-      },
-    ],
-    videoUrl: "/videos/Final Ronas.mp4",
-  },
-  {
-    id: 3,
+    id: 4,
     title: "Equipement Manager",
     description:
       "This Full Stack Web app was developed for the CNR company to let the admin track all the IT Equipements inside the company.",
