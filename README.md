@@ -1,4 +1,5 @@
-👨‍💻 My Portfolio v1 – A Clean & Animated Showcase
+# 👨‍💻 My Portfolio v1 – A Clean & Animated Showcase
+
 Welcome to the repository for the first version of my personal portfolio. This project is a fully responsive, single-page application built with React.js to showcase my skills, projects, and journey as a developer.
 
 It features a clean, modern design, smooth animations, and an intuitive user experience.
